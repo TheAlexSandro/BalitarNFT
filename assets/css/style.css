@@ -87,7 +87,7 @@ header .container .slider .slide.off {
 
 .batik {
     padding: 0 5%;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .batik h1 {
@@ -183,7 +183,7 @@ header .container .slider .slide.off {
 
 .navigate .navigate-container {
     margin-top: 50px;
-    display: grid !important;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
@@ -252,7 +252,7 @@ header .container .slider .slide.off {
         grid-template-columns: 1fr;
     }
     .navigate .navigate-container {
-        grid-template-columns: 2fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .navigate .navigate-container {
         max-width: 100%;
@@ -262,7 +262,7 @@ header .container .slider .slide.off {
     }
 }
 
-@media (width>769px) and (width<1241px) {
+@media (width>769px) {
     header .container .slider .container {
         flex: 1;
         display: flex;
@@ -270,8 +270,10 @@ header .container .slider .slide.off {
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (width>769px) and (width<1241px) {
     .navigate .navigate-container {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .navigate .navigate-card a {
@@ -310,7 +312,7 @@ header .container .slider .slide.off {
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
-        width: 115vw;
+        width: 110vw;
         max-width: none;
         scrollbar-width: thin;
         justify-content: center;
