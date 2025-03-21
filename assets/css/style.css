@@ -252,7 +252,7 @@ header .container .slider .slide.off {
         grid-template-columns: 1fr;
     }
     .navigate .navigate-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     .navigate .navigate-container {
         max-width: 100%;
@@ -272,7 +272,7 @@ header .container .slider .slide.off {
     }
 }
 
-@media (width>769px) and (width<1241px) {
+@media (width>769px) and (width<1281px) {
     .navigate .navigate-container {
         grid-template-columns: repeat(2, 1fr);
     }
