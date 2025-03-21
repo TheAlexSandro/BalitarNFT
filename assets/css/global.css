@@ -76,6 +76,11 @@ a:hover::before {
     width: 0;
 }
 
+.color__block {
+    background-color: var(--first-color);
+    display: inline-block;
+}
+
 
 /* HIDDEN TEXT CSS */
 

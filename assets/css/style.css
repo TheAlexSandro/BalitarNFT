@@ -94,8 +94,6 @@ header .container .slider .slide.off {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 10px;
-    background-color: var(--first-color);
-    display: inline-block;
 }
 
 .batik p {
@@ -166,11 +164,101 @@ header .container .slider .slide.off {
 }
 
 
+/* NAVIGATE CSS */
+
+.navigate {
+    padding: 0 5%;
+    margin-top: 90px;
+}
+
+.navigate h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.navigate p {
+    font-size: 16px;
+}
+
+.navigate .navigate-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.navigate .navigate-card {
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.navigate .navigate-card h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: none;
+}
+
+.navigate .navigate-card p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navigate .navigate-card i {
+    display: block;
+    font-size: 30px;
+}
+
+.navigate .navigate-card:hover {
+    transform: translateY(-10px);
+}
+
+.navigate .navigate-card a {
+    margin-top: 30px;
+    text-decoration: none;
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    width: 70%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.navigate .navigate-card a i {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navigate .navigate-card a:hover i {
+    transform: translateX(5px);
+    transition: 0.3s ease-in-out;
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
     .batik .batik-container {
         grid-template-columns: 1fr;
+    }
+    .navigate .navigate-container {
+        grid-template-columns: 1fr;
+    }
+    .navigate .navigate-container {
+        max-width: 100%;
+    }
+    .navigate .navigate-card a {
+        width: 100%;
     }
 }
 
