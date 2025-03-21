@@ -1,5 +1,5 @@
 /*
-* Copyright 2024 dan selamanya oleh Kelompok 5. All Rights reserved.
+* Copyright 2025. All Rights reserved.
 * DILARANG MENYALIN, MENGUBAH, MENGGUBAH, MEMODIFIKASI KODE CSS INI.
 */
 
@@ -7,169 +7,132 @@
 /* MAIN PADDING */
 
 main {
-    padding: 0 65px;
+    margin-top: 40px;
+}
+
+
+/* HEADER */
+
+header {
+    position: relative;
+    background: url('../image/header.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+header .container {
+    margin-top: -5%;
+    max-width: 70%;
+}
+
+header .container .image-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+header .container .image-container img {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
 /* SECTION[VIDEO] */
 
 .video {
-    margin-top: 100px;
+    margin-top: 40px;
+    padding: 0 5%;
 }
 
-.video h1 {
-    font-size: 30px;
+.video .description {
+    margin-bottom: 30px;
 }
 
-.video {
-    text-align: center;
-}
-
-.video h1 {
-    font-size: 35px;
-}
-
-.video .button {
-    margin-top: 10px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video .button i {
-    transition: transform 0.3s;
-    margin-left: 10px;
-}
-
-.video .button:hover i {
-    transform: translateX(10px);
-}
-
-.video hr {
-    margin-bottom: 50px;
-    width: 50%;
+.video .description h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .video .video-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.video .video-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease;
-    margin-bottom: 40px;
-}
-
-.video .video-card:hover {
-    transform: translateY(-20px);
-}
-
-.video .video-preview {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.video .video-info {
-    padding: 15px;
-}
-
-.video .video-info h3 {
-    margin: -10px 0 20px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.video .video-info p {
-    margin: 5px 0;
-    color: #666;
-    font-size: 0.9rem;
-}
-
-
-/* SECTION[TONTON] */
-
-.tonton {
-    margin-top: 100px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     align-items: center;
-    text-align: center;
+    justify-content: center;
 }
 
-.tonton hr {
-    margin-bottom: 50px;
-    width: 70%;
+.video .video-container .video-card {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
-.tonton iframe {
+.video .video-container .video-card .video-info {
+    padding: 0 20px 20px;
+}
+
+.video .video-container .video-card h1 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.video .video-container .video-card p {
+    font-size: 15px;
+}
+
+.video .video-container .video-card iframe {
     width: 100%;
-    height: 500px;
-}
-
-.tonton .button {
-    margin-top: 40px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--black-color);
-    color: var(--white-color);
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 30%;
-}
-
-.tonton .button i {
-    transition: transform 0.3s;
-    margin-right: 10px;
-}
-
-.tonton .button:hover i {
-    transform: translateX(-10px);
+    height: 315px;
 }
 
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 900px) {
-    main {
-        padding: 0 25px;
+@media (width<1025px) {
+    header {
+        height: auto;
     }
-    p,
-    ul,
-    li,
-    ol {
-        font-size: 15px;
+    header .container {
+        margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
     }
-    .navbar {
-        padding: 15px 41px 15px 41px
+    header .container .image-container {
+        flex-direction: column;
     }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    main {
-        padding: 0 35px;
+    header .container .image-container img {
+        max-width: 100%;
     }
-}
-
-@media only screen and (width: 1024px) {
-    main {
-        padding: 0 35px;
+    .video .video-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
