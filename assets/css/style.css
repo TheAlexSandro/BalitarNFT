@@ -183,7 +183,7 @@ header .container .slider .slide.off {
 
 .navigate .navigate-container {
     margin-top: 50px;
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
@@ -252,7 +252,7 @@ header .container .slider .slide.off {
         grid-template-columns: 1fr;
     }
     .navigate .navigate-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     .navigate .navigate-container {
         max-width: 100%;
@@ -262,13 +262,20 @@ header .container .slider .slide.off {
     }
 }
 
-@media (width>768px) {
+@media (width>769px) and (width<1241px) {
     header .container .slider .container {
         flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .navigate .navigate-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navigate .navigate-card a {
+        width: 100%;
     }
 }
 
