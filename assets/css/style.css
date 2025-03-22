@@ -49,7 +49,7 @@ header .container .left p {
     color: #000;
 }
 
-header .container .left a {
+header .container .left .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -60,7 +60,7 @@ header .container .left a {
     transition: 0.3s ease-in-out;
 }
 
-header .container .left a:hover {
+header .container .left .btn:hover {
     background-color: #000;
     transition: 0.3s ease-in-out;
     transform: scale(1.1);
@@ -72,6 +72,16 @@ header .container .slider .slide img {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    animation: sliderAnimation 0.5s linear;
+}
+
+@keyframes sliderAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 header .container .slider .slide.active {
@@ -197,12 +207,16 @@ header .container .slider .slide.off {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .navigate .navigate-card h1 {
     font-size: 18px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: none;
 }
 
@@ -223,7 +237,7 @@ header .container .slider .slide.off {
 .navigate .navigate-card a {
     margin-top: 30px;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     background: #000;
     color: #fff;
     padding: 10px 20px;

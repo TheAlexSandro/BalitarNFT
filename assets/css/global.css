@@ -81,18 +81,13 @@ a:hover::before {
     display: inline-block;
 }
 
-
-/* HIDDEN TEXT CSS */
-
-.hidden {
-    opacity: 0;
-    transform: translateY(150px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+.more-text {
+    display: none;
 }
 
-.hidden.visible {
-    opacity: 1;
-    transform: translateY(0);
+.read-more {
+    cursor: pointer;
+    color: var(--first-color);
 }
 
 

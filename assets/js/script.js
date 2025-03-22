@@ -101,3 +101,15 @@ document.addEventListener('submit', () => {
     window.location.href = '/';
     alert('Pesan terkirim!');
 });
+
+function toggleText(id, btn) {
+    let moreText = document.getElementById(id);
+
+    if (!moreText.style.display || moreText.style.display === "none") {
+        moreText.style.display = "inline";
+        btn.innerHTML = "Baca Lebih Sedikit";
+    } else {
+        moreText.style.display = "none";
+        btn.innerHTML = "Baca Selengkapnya";
+    }
+}

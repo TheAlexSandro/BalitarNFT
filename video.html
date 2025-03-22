@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="icon" href="assets/image/icon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Video - BalitarNFT</title>
 </head>
 
 <body>
-    <section class="head">
+    <section class="head" data-aos="fade-down" data-aos-duration="500">
         <nav class="nav container">
             <div class="nav__data">
                 <a href="/" class="nav__logo no-hover-a">
@@ -411,27 +412,27 @@
     <main>
         <header>
             <div class="container">
-                <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet voluptatum magnam modi laudantium vero earum facere error nemo temporibus.</p>
+                <h1 data-aos="fade-down" data-aos-duration="1500">Lorem ipsum</h1>
+                <p data-aos="fade-left" data-aos-duration="1600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet voluptatum magnam modi laudantium vero earum facere error nemo temporibus.</p>
 
                 <div class="image-container">
-                    <img src="assets/image/f1.png" alt="Image 1">
-                    <img src="assets/image/f2.png" alt="Image 2">
-                    <img src="assets/image/f3.png" alt="Image 3">
+                    <img class="toUp" src="assets/image/f1.png" alt="Image 1">
+                    <img class="toDown" src="assets/image/f2.png" alt="Image 2">
+                    <img class="toUp" src="assets/image/f3.png" alt="Image 3">
                 </div>
             </div>
         </header>
 
         <section class="video">
             <div class="description">
-                <h1>Video Kami</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nobis!</p>
+                <h1 data-aos="fade-down" data-aos-duration="1500">Video Kami</h1>
+                <p data-aos="fade-right" data-aos-duration="1600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nobis!</p>
             </div>
 
 
             <!-- Jika Anda hanya ingin mengganti videonya, maka cukup ganti tautan pada "src" -->
             <div class="video-container">
-                <div class="video-card">
+                <div class="video-card" data-aos="fade-right" data-aos-duration="800">
                     <iframe src="https://www.youtube.com/embed/cvl8e2se8Q4?si=TJvDECtdTvPfQiDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                     <div class="video-info">
@@ -439,7 +440,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
                     </div>
                 </div>
-                <div class="video-card">
+                <div class="video-card" data-aos="fade-left" data-aos-duration="800">
                     <iframe src="https://www.youtube.com/embed/ZpsV5SGa5R4?si=0s_J2ia07UkOajRb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                     <div class="video-info">
@@ -447,7 +448,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
                     </div>
                 </div>
-                <div class="video-card">
+                <div class="video-card" data-aos="fade-right" data-aos-duration="900">
                     <iframe src="https://www.youtube.com/embed/0xiqY0l7eE4?si=6xUaULNhoAjAeiPD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                     <div class="video-info">
@@ -455,7 +456,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo.</p>
                     </div>
                 </div>
-                <div class="video-card">
+                <div class="video-card" data-aos="fade-left" data-aos-duration="900">
                     <iframe src="https://www.youtube.com/embed/KCpQBB22Xwc?si=YfPwO_plsbnfseSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                     <div class="video-info">
@@ -481,6 +482,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
