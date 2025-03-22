@@ -1,7 +1,7 @@
 /**
- * DO NOT MODIFY THIS FILE
+ * DO NOT MODIFY THIS CODE WITHOUT AUTHORIZATION
  * 
- * This file is used to initialize AOS library
+ * This code is used to initialize AOS library
  * 
  * @author BalitarNFT
  * @version 1.0.0
