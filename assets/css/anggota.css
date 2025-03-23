@@ -33,6 +33,26 @@ main {
     color: white;
 }
 
+.bg-navy {
+    background-color: #14213D;
+    color: white;
+}
+
+.bg-zamrud {
+    background-color: #01796F;
+    color: white;
+}
+
+.bg-orange {
+    background-color: #FF7F11;
+    color: black;
+}
+
+.bg-gray {
+    background-color: #FFC107;
+    color: black;
+}
+
 .anggota {
     padding: 0 5%;
 }

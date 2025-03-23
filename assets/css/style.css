@@ -33,7 +33,7 @@ header .container .left {
     flex: 1;
     max-width: 50%;
     padding-right: 20px;
-    margin-top: -50px;
+    margin-top: 20%;
 }
 
 header .container .left h1 {
@@ -73,6 +73,7 @@ header .container .slider .slide img {
     object-fit: cover;
     border-radius: 10px;
     animation: sliderAnimation 0.5s linear;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 @keyframes sliderAnimation {
@@ -226,7 +227,7 @@ header .container .slider .slide.off {
     font-size: 30px;
 }
 
-.navigate .navigate-card a {
+.navigate .navigate-card .btn {
     margin-top: 30px;
     text-decoration: none;
     display: block;
@@ -239,14 +240,14 @@ header .container .slider .slide.off {
     transition: 0.3s ease-in-out;
 }
 
-.navigate .navigate-card a i {
+.navigate .navigate-card .btn i {
     display: inline-block;
     margin-left: 5px;
     font-size: 20px;
     transition: 0.3s ease-in-out;
 }
 
-.navigate .navigate-card a:hover {
+.navigate .navigate-card .btn:hover {
     transform: translateY(-10px);
     background-color: var(--first-color);
 }
