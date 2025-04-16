@@ -49,20 +49,39 @@ header .container .left p {
     color: #000;
 }
 
+header .container .left .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: auto;
+    overflow: visible;
+}
+
 header .container .left .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: var(--first-color);
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-header .container .left .btn:hover {
+header .container .left .btn-1 {
+    background-color: var(--first-color);
+}
+
+header .container .left .btn-2 {
     background-color: #000;
-    transition: 0.3s ease-in-out;
+}
+
+header .container .left .btn-1:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+header .container .left .btn-2:hover {
+    background-color: var(--first-color);
     transform: scale(1.1);
 }
 
@@ -350,12 +369,17 @@ header .container .slider .slide.off {
     }
 }
 
-@media (width: 390px) {
+@media (width <=390px) {
     header .container #h {
         margin-top: -50%;
     }
     header .container .slider {
         max-height: 76%;
+    }
+    header .container .left .button-container {
+        flex-direction: column;
+        gap: 1px;
+        max-width: 100%;
     }
     .batik {
         margin-top: -40%;
@@ -367,7 +391,7 @@ header .container .slider .slide.off {
         padding: 0 10px;
     }
     header {
-        margin-top: 35%;
+        margin-top: 20%;
         padding: 0 10%;
     }
     header .container {
@@ -387,6 +411,13 @@ header .container .slider .slide.off {
     }
     header .container #h {
         margin-top: -40%;
+    }
+    header .container .left .button-container {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 1px;
+        width: 70%;
+        max-width: 100%;
     }
     header .container .slider {
         max-height: 75%;
@@ -421,7 +452,7 @@ header .container .slider .slide.off {
         padding: 0 10px;
     }
     header {
-        margin-top: 20%;
+        margin-top: 5%;
         padding: 0 10%;
     }
     header .container {
@@ -432,6 +463,9 @@ header .container .slider .slide.off {
     header .container .left {
         max-width: 100%;
         padding-right: 0;
+    }
+    header .container .left .button-container {
+        margin-bottom: 50px;
     }
     header .container .left h1 {
         font-size: 40px;

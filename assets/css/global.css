@@ -90,6 +90,21 @@ a:hover::before {
     color: var(--first-color);
 }
 
+.header-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border-radius: 50px;
+    padding: 10px 30px;
+    max-width: fit-content;
+    width: auto;
+}
+
+.header-info i {
+    font-size: 40px;
+}
+
 
 /* NAVBAR CSS */
 
