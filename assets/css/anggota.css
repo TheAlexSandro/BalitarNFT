@@ -53,6 +53,11 @@ main {
     color: black;
 }
 
+#angt {
+    background-color: #c2ff3dc4;
+    margin-bottom: 20px;
+}
+
 .anggota {
     padding: 0 5%;
 }

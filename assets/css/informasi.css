@@ -3,7 +3,63 @@ main {
     padding: 0 50px;
 }
 
+
+/* SECTION[INFO] */
+
 #info {
     background-color: #000000d3;
     color: white;
+}
+
+.info h1 {
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.info p {
+    font-size: 15px;
+}
+
+.info .label {
+    margin-top: 50px;
+}
+
+.info .info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .info-container img {
+    margin-top: 20px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media screen and (width < 768px) {
+    main {
+        margin-top: 20%;
+        padding: 0 20px;
+    }
+    .info .info-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .info .info-container img {
+        width: 100%;
+    }
+}
+
+@media (width >=768px) and (width <=1024px) {
+    .info .info-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .info .info-container img {
+        width: 100%;
+    }
 }
